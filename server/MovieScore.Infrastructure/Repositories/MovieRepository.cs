@@ -1,5 +1,7 @@
-﻿using MovieScore.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieScore.Core.Entities;
 using MovieScore.Core.Interfaces;
+using MovieScore.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +12,14 @@ namespace MovieScore.Infrastructure.Repositories
 {
     public class MovieRepository : IMovieRepository
     {
-        public async Task<IEnumerable<Pelicula>> GetMovies()
+        private readonly MovieScoreContext _movieScoreContext;
+        public MovieRepository(MovieScoreContext movieScoreContext)
         {
-            var movies = Enumerable.Range(1, 10).Select(x => new Pelicula
-            {
-                Id = x,
-                Title = $"Title {x}",
-                Description = $"Description {x}",
-                Image = $"Image {x}",
-                Score = x,
-                Date = DateTime.Now
-            });
-            await Task.Delay(10);
+            _movieScoreContext = movieScoreContext;
+        }
+        public async Task<IEnumerable<Movie>> GetMovies()
+        {
+            var movies = await _movieScoreContext.Movie.ToListAsync();
             return movies;
         }
     }
