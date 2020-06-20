@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T1Hb5mUXJ9rSWirjo8eWkK6dfVCfYdUvO5kh5f45QytZMRuXPDMLh90p3joesvtn+oYKyo1AgE/kx6XbKd4FkQ==",
+  "success": true,
+  "projectFilePath": "D:\\Proyectos\\Proyecto .NET Angular\\server\\MovieScore.Api\\MovieScore.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
