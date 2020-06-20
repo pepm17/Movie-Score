@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MovieScore.Core.Entities
 {
@@ -7,9 +8,10 @@ namespace MovieScore.Core.Entities
     {
         public Movie()
         {
-            ActorMovie = new HashSet<ActorMovie>();
+            Actors = new HashSet<ActorMovie>();
         }
-
+        
+        [Key]
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
@@ -17,6 +19,6 @@ namespace MovieScore.Core.Entities
         public int Score { get; set; }
         public DateTime? Date { get; set; }
 
-        public virtual ICollection<ActorMovie> ActorMovie { get; set; }
+        public virtual ICollection<ActorMovie> Actors { get; set; }
     }
 }

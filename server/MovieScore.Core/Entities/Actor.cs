@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace MovieScore.Core.Entities
 {
@@ -7,7 +6,7 @@ namespace MovieScore.Core.Entities
     {
         public Actor()
         {
-            ActorMovie = new HashSet<ActorMovie>();
+            Movies = new HashSet<ActorMovie>();
         }
 
         public int Id { get; set; }
@@ -15,8 +14,8 @@ namespace MovieScore.Core.Entities
         public string Lastname { get; set; }
         public string Image { get; set; }
         public string Description { get; set; }
-        public string Score { get; set; }
+        public int Score { get; set; }
 
-        public virtual ICollection<ActorMovie> ActorMovie { get; set; }
+        public virtual ICollection<ActorMovie> Movies { get; set; }
     }
 }

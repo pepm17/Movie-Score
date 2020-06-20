@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace MovieScore.Core.Entities
+﻿namespace MovieScore.Core.Entities
 {
     public partial class ActorMovie
     {
@@ -9,7 +6,7 @@ namespace MovieScore.Core.Entities
         public int IdActor { get; set; }
         public int IdMovie { get; set; }
 
-        public virtual Actor IdActorNavigation { get; set; }
-        public virtual Movie IdMovieNavigation { get; set; }
+        public virtual Actor Actor { get; set; }
+        public virtual Movie Movie { get; set; }
     }
 }

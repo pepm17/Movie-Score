@@ -22,5 +22,17 @@ namespace MovieScore.Infrastructure.Repositories
             var movies = await _movieScoreContext.Movie.ToListAsync();
             return movies;
         }
+
+        public async Task<Movie> GetMovie(int id)
+        {
+            var movie = await _movieScoreContext.Movie.FirstOrDefaultAsync(x=> x.Id == id);
+            return movie;
+        }
+
+        public async Task InsertMovie(Movie movie)
+        {
+            _movieScoreContext.Movie.Add(movie);
+            await _movieScoreContext.SaveChangesAsync();
+        }
     }
 }
