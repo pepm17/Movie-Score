@@ -1,0 +1,9 @@
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\bin\Debug\netstandard2.0\MovieScore.Core.deps.json
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\bin\Debug\netstandard2.0\MovieScore.Core.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\bin\Debug\netstandard2.0\MovieScore.Core.pdb
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\obj\Debug\netstandard2.0\MovieScore.Core.csprojAssemblyReference.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\obj\Debug\netstandard2.0\MovieScore.Core.AssemblyInfoInputs.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\obj\Debug\netstandard2.0\MovieScore.Core.AssemblyInfo.cs
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\obj\Debug\netstandard2.0\MovieScore.Core.csproj.CoreCompileInputs.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\obj\Debug\netstandard2.0\MovieScore.Core.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Core\obj\Debug\netstandard2.0\MovieScore.Core.pdb

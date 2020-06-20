@@ -1,0 +1,12 @@
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\bin\Debug\netstandard2.0\MovieScore.Infrastructure.deps.json
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\bin\Debug\netstandard2.0\MovieScore.Infrastructure.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\bin\Debug\netstandard2.0\MovieScore.Infrastructure.pdb
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\bin\Debug\netstandard2.0\MovieScore.Core.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\bin\Debug\netstandard2.0\MovieScore.Core.pdb
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.csprojAssemblyReference.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.AssemblyInfoInputs.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.AssemblyInfo.cs
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.csproj.CopyComplete
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Infrastructure\obj\Debug\netstandard2.0\MovieScore.Infrastructure.pdb

@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MovieScore.Core.Interfaces;
+using MovieScore.Infrastructure.Repositories;
 
 namespace MovieScore.Api
 {
@@ -26,6 +28,9 @@ namespace MovieScore.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Dependencies
+            services.AddTransient<IMovieRepository, MovieRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
