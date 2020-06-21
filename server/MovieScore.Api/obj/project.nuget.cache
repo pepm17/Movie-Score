@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QtboMYKXtJivfJHdEIRObPDWZVWDBrmLhYvsJIY4/2tKExO/RbsLlpHFXUeW38QlFDN5VGcBLmU5o+/dq/Qdmg==",
+  "dgSpecHash": "gcAkdn+Gi4xA4b//pRO7nkNESwo3V4Tw1ePFEjv8qgzZINf1/XvAD/SeCuE7hme8IZqzpsjzi9J9WSdqHGjRDQ==",
   "success": true,
   "projectFilePath": "D:\\Proyectos\\Proyecto .NET Angular\\server\\MovieScore.Api\\MovieScore.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

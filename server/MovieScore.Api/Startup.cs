@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using MovieScore.Core.Interfaces;
 using MovieScore.Infrastructure.Data;
 using MovieScore.Infrastructure.Repositories;
+using System;
 
 namespace MovieScore.Api
 {
@@ -23,6 +25,8 @@ namespace MovieScore.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddDbContext<MovieScoreContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("MovieScore"))
