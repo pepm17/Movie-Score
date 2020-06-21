@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieScore.Core.Interfaces;
 using MovieScore.Infrastructure.Data;
+using MovieScore.Infrastructure.Filters;
 using MovieScore.Infrastructure.Repositories;
 using System;
 
@@ -24,16 +26,21 @@ namespace MovieScore.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddControllers();
 
             services.AddDbContext<MovieScoreContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("MovieScore"))
             );
 
-            //Dependencies
             services.AddTransient<IMovieRepository, MovieRepository>();
+
+            services.AddMvc(options =>
+            {
+                options.Filters.Add<ValidationFilter>();
+            }).AddFluentValidation(options => {
+                options.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

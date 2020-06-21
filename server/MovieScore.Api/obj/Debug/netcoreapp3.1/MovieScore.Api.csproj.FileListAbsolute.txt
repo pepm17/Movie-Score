@@ -58,3 +58,10 @@ D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1
 D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\obj\Debug\netcoreapp3.1\MovieScore.Api.csproj.CoreCompileInputs.cache
 D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\obj\Debug\netcoreapp3.1\MovieScore.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\obj\Debug\netcoreapp3.1\MovieScore.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+D:\Proyectos\Proyecto .NET Angular\server\MovieScore.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NZipL0/b1oHRccLCKgs/zvifL9VBQQcPGLsUGHXFixdXozI03FYZCcbSmuCyVFAjBZeHpPeetCdrUOuc2zxgfg==",
+  "dgSpecHash": "dfGpBCaqbLU/clDktredvniIe0aZWa0P+28pMQZkKdB4OlWo5l8B80xx120vmJMlKOjifa8gvmdNu6H1O9y1Ow==",
   "success": true,
   "projectFilePath": "D:\\Proyectos\\Proyecto .NET Angular\\server\\MovieScore.Core\\MovieScore.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    "C:\\Users\\Dell\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
