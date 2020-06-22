@@ -1,0 +1,11 @@
+nav{
+    background-color: black;
+    padding-right: 10px;
+}
+.textNav{
+    color: white;
+}
+.search{
+    width: 300px;
+    float: right;
+}
