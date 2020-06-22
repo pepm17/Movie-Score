@@ -1,11 +1,6 @@
 nav{
-    background-color: black;
-    padding-right: 10px;
+    background: black;
 }
-.textNav{
+.logo{
     color: white;
-}
-.search{
-    width: 300px;
-    float: right;
 }
