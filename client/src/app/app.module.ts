@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
 import { ListMoviesComponent } from './components/movies/list-movies/list-movies.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgFallimgModule } from 'ng-fallimg';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgFallimgModule.forRoot({
+      default: 'https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

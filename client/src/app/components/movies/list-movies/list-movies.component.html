@@ -1,7 +1,7 @@
 <div class="row row-cols-1 row-cols-md-4 my-card">
   <div class="col mb-4" *ngFor = "let movie of movies">
     <div class="card h-100">
-      <img src="{{movie.title}}" class="card-img-top" onerror="this.style.display='none'" alt="Not image yet">
+      <img src="{{movie.title}}" class="card-img-top" alt="Not image yet" fallimg>
       <div class="card-body">
         <h5 class="card-title">{{movie.title}}</h5>
         <p class="card-text">Score: {{movie.score}}</p>
