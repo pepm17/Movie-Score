@@ -10,6 +10,8 @@ namespace MovieScore.Infrastructure.Mappings
         {
             CreateMap<Movie, MovieDto>();
             CreateMap<MovieDto, Movie>();
+            CreateMap<Actor, ActorDto>();
+            CreateMap<ActorDto, Actor>();
         }
     }
 }

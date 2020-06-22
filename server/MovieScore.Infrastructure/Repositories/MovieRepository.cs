@@ -2,10 +2,7 @@
 using MovieScore.Core.Entities;
 using MovieScore.Core.Interfaces;
 using MovieScore.Infrastructure.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MovieScore.Infrastructure.Repositories
@@ -33,6 +30,26 @@ namespace MovieScore.Infrastructure.Repositories
         {
             _movieScoreContext.Movie.Add(movie);
             await _movieScoreContext.SaveChangesAsync();
+        }
+
+        public async Task<bool> UpdateMovie(Movie movie)
+        {
+            var currentMovie = await GetMovie(movie.Id);
+            currentMovie.Title = movie.Title;
+            currentMovie.Description = movie.Description;
+            currentMovie.Image = movie.Image;
+            currentMovie.Score = (movie.Score + currentMovie.Score)/2;
+            currentMovie.Date = movie.Date;
+            int rows = await _movieScoreContext.SaveChangesAsync();
+            return rows > 0;
+        }
+
+        public async Task<bool> DeleteMovie(int id)
+        {
+            var currentMovie = await GetMovie(id);
+            _movieScoreContext.Remove(currentMovie);
+            int rows = await _movieScoreContext.SaveChangesAsync();
+            return rows > 0;
         }
     }
 }

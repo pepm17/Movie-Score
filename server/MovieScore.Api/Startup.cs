@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieScore.Core.Interfaces;
+using MovieScore.Core.Services;
 using MovieScore.Infrastructure.Data;
 using MovieScore.Infrastructure.Filters;
 using MovieScore.Infrastructure.Repositories;
@@ -34,6 +35,9 @@ namespace MovieScore.Api
             );
 
             services.AddTransient<IMovieRepository, MovieRepository>();
+            services.AddTransient<IMovieService, MovieService>();
+            services.AddTransient<IActorRepository, ActorRepository>();
+            services.AddTransient<IActorService, ActorService>();
 
             services.AddMvc(options =>
             {

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace MovieScore.Core.Interfaces
 {
-    public interface IMovieRepository
+    public interface IMovieService
     {
         Task<IEnumerable<Movie>> GetMovies();
         Task<Movie> GetMovie(int id);
