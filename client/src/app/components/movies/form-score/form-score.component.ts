@@ -15,6 +15,7 @@ export class FormScoreComponent implements OnInit {
   constructor(private movieService: MoviesService) { }
 
   ngOnInit(): void {
+    this.score = 0;
     this.id = this.childMessage.id;
   }
 
@@ -25,7 +26,8 @@ export class FormScoreComponent implements OnInit {
     console.log(this.childMessage);
     this.movieService.updateMovie(this.id, this.childMessage).subscribe(
       res => {
-        console.log(res)
+        console.log(res);
+        window.location.reload();
       },
       err => console.log(err)
     )
