@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class FindMovieComponent implements OnInit {
 
-  movie: Movie;
+  movie: any;
   data: any = [];
   score: number;
 
@@ -22,12 +22,12 @@ export class FindMovieComponent implements OnInit {
 
   findMovie(){
     const params = this.activedRoute.snapshot.params;
-    console.log(params.id);
     this.movieService.getMovie(params.id).subscribe(
       res=>{
         this.data = res;
         this.movie = this.data.data;
         this.score = this.movie.score;
+        console.log(this.movie);
       }
     )
   }

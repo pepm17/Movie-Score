@@ -1,0 +1,12 @@
+<div class="row row-cols-1 row-cols-md-6 my-card">
+  <div class="col mb-4" *ngFor = "let actor of actors">
+    <div class="card h-100">
+      <img [src]="actor.actor.image" class="card-img-top" alt="Image" fallimg>
+      <div class="card-body">
+        <h5 class="card-title">{{actor.actor.name}} {{actor.actor.lastname}}</h5>
+        <p class="card-text">Score: {{actor.actor.score}}</p>
+      </div>
+      <a [routerLink]="" class="stretched-link"></a>
+    </div>
+  </div>
+</div>

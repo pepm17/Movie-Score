@@ -12,6 +12,7 @@ import { FindMovieComponent } from './components/movies/find-movie/find-movie.co
 import { FormScoreComponent } from './components/movies/form-score/form-score.component';
 import { FormsModule } from '@angular/forms'
 import { MoviesService } from './services/movies.service';
+import { ListActorsComponent } from './components/actors/list-actors/list-actors.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MoviesService } from './services/movies.service';
     WelcomeComponent,
     FindMovieComponent,
     FormScoreComponent,
+    ListActorsComponent,
   ],
   imports: [
     BrowserModule,
