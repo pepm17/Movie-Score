@@ -11,6 +11,7 @@ export class FindMovieComponent implements OnInit {
 
   movie: Movie;
   data: any = [];
+  score: number;
 
   constructor(private movieService: MoviesService, private activedRoute: ActivatedRoute) { }
 
@@ -26,6 +27,7 @@ export class FindMovieComponent implements OnInit {
       res=>{
         this.data = res;
         this.movie = this.data.data;
+        this.score = this.movie.score;
       }
     )
   }

@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgFallimgModule } from 'ng-fallimg';
 import { FindMovieComponent } from './components/movies/find-movie/find-movie.component';
 import { FormScoreComponent } from './components/movies/form-score/form-score.component';
+import { FormsModule } from '@angular/forms'
+import { MoviesService } from './services/movies.service';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,12 @@ import { FormScoreComponent } from './components/movies/form-score/form-score.co
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     NgFallimgModule.forRoot({
       default: 'https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg'
     })
   ],
-  providers: [],
+  providers: [MoviesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

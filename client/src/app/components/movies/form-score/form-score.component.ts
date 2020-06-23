@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Movie } from 'src/app/models/Movie';
+import { MoviesService } from '../../../services/movies.service';
 
 @Component({
   selector: 'app-form-score',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormScoreComponent implements OnInit {
 
-  constructor() { }
+  @Input() childMessage: Movie;
+  id: number
+  score: number
+  constructor(private movieService: MoviesService) { }
 
   ngOnInit(): void {
+    this.id = this.childMessage.id;
   }
 
+  vote(){
+    delete this.childMessage.id;
+    delete this.childMessage.date;
+    this.childMessage.score = +this.score;
+    console.log(this.childMessage);
+    this.movieService.updateMovie(this.id, this.childMessage).subscribe(
+      res => {
+        console.log(res)
+      },
+      err => console.log(err)
+    )
+  }
 }

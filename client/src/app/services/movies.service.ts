@@ -21,14 +21,14 @@ export class MoviesService {
   }
 
   insertMovie(movie: Movie): Observable<any>{
-    return this.http.post<any>(`${this.API_URI}/Movie`, movie);
+    return this.http.post<any>(`/api/Movie`, movie);
   }
 
   updateMovie(id: number, updateMovie: Movie): Observable<any>{
-    return this.http.put<any>(`${this.API_URI}/Movie/${id}`, updateMovie);
+    return this.http.put<any>(`/api/Movie/${id}`, updateMovie);
   }
 
   deleteMovie(id: number): Observable<any>{
-    return this.http.delete<any>(`${this.API_URI}/Movie/${id}`);
+    return this.http.delete<any>(`/api/Movie/${id}`);
   }
 }
