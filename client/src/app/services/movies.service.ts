@@ -16,19 +16,19 @@ export class MoviesService {
     return this.http.get<any>('/api/Movie');
   }
 
-  getMovie(id: number): Observable<Movie>{
-    return this.http.get<Movie>(`${this.API_URI}/Movie/${id}`);
+  getMovie(id: number): Observable<any>{
+    return this.http.get<any>(`/api/Movie/${id}`);
   }
 
-  insertMovie(movie: Movie): Observable<Movie>{
-    return this.http.post<Movie>(`${this.API_URI}/Movie`, movie);
+  insertMovie(movie: Movie): Observable<any>{
+    return this.http.post<any>(`${this.API_URI}/Movie`, movie);
   }
 
-  updateMovie(id: number, updateMovie: Movie): Observable<boolean>{
-    return this.http.put<boolean>(`${this.API_URI}/Movie/${id}`, updateMovie);
+  updateMovie(id: number, updateMovie: Movie): Observable<any>{
+    return this.http.put<any>(`${this.API_URI}/Movie/${id}`, updateMovie);
   }
 
-  deleteMovie(id: number): Observable<boolean>{
-    return this.http.delete<boolean>(`${this.API_URI}/Movie/${id}`);
+  deleteMovie(id: number): Observable<any>{
+    return this.http.delete<any>(`${this.API_URI}/Movie/${id}`);
   }
 }

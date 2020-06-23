@@ -1,12 +1,12 @@
-<div class="row row-cols-1 row-cols-md-4 my-card">
+<div class="row row-cols-1 row-cols-md-6 my-card">
   <div class="col mb-4" *ngFor = "let movie of movies">
     <div class="card h-100">
-      <img src="{{movie.title}}" class="card-img-top" alt="Not image yet" fallimg>
+      <img [src]="movie.image" class="card-img-top" alt="Image" fallimg>
       <div class="card-body">
         <h5 class="card-title">{{movie.title}}</h5>
         <p class="card-text">Score: {{movie.score}}</p>
       </div>
-      <a href="#" class="stretched-link"></a>
+      <a [routerLink]="['/home', movie.id]" class="stretched-link"></a>
+    </div>
   </div>
-</div>
 </div>

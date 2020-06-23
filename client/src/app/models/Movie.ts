@@ -1,8 +1,8 @@
 export interface Movie{
-    Id?: number,
-    Title: string,
-    Description: string,
-    Image?: string,
-    Score: number,
-    Date?: Date
+    id?: number,
+    title: string,
+    description: string,
+    image?: string,
+    score: number,
+    date?: Date
 }

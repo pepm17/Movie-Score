@@ -8,6 +8,8 @@ import { ListMoviesComponent } from './components/movies/list-movies/list-movies
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgFallimgModule } from 'ng-fallimg';
+import { FindMovieComponent } from './components/movies/find-movie/find-movie.component';
+import { FormScoreComponent } from './components/movies/form-score/form-score.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { NgFallimgModule } from 'ng-fallimg';
     NavbarComponent,
     ListMoviesComponent,
     WelcomeComponent,
+    FindMovieComponent,
+    FormScoreComponent,
   ],
   imports: [
     BrowserModule,
