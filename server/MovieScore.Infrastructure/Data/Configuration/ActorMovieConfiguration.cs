@@ -12,7 +12,7 @@ namespace MovieScore.Infrastructure.Data.Configuration
 
             builder.HasOne(d => d.Actor)
                 .WithMany(p => p.Movies)
-                .HasForeignKey(d => d.IdMovie)
+                .HasForeignKey(d => d.IdActor)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Actor_Movie_Actor");
 

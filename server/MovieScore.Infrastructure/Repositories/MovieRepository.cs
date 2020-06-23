@@ -16,13 +16,15 @@ namespace MovieScore.Infrastructure.Repositories
         }
         public async Task<IEnumerable<Movie>> GetMovies()
         {
-            var movies = await _movieScoreContext.Movie.ToListAsync();
+            var movies = await _movieScoreContext.Movie.Include(c => c.Actors)
+                .ThenInclude(cs => cs.Actor).ToListAsync();
             return movies;
         }
 
         public async Task<Movie> GetMovie(int id)
         {
-            var movie = await _movieScoreContext.Movie.FirstOrDefaultAsync(x=> x.Id == id);
+            var movie = await _movieScoreContext.Movie.Include(c=> c.Actors)
+                .ThenInclude(cs => cs.Actor).FirstOrDefaultAsync(x=> x.Id == id || x.Title.Equals(id));
             return movie;
         }
 

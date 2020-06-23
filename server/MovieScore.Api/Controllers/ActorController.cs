@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using MovieScore.Api.Responses;
 using MovieScore.Core.DTOs;
 using MovieScore.Core.Entities;
 using MovieScore.Core.Interfaces;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MovieScore.Api.Controllers
 {

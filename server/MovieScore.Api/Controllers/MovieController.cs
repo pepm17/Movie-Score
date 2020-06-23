@@ -34,8 +34,8 @@ namespace MovieScore.Api.Controllers
         public async Task<IActionResult> GetMovie(int id)
         {
             var movie = await _movieService.GetMovie(id);
-            var movieDto =  _mapper.Map<MovieDto>(movie);
-            var response = new ApiResponse<MovieDto>(movieDto);
+            //var movieDto =  _mapper.Map<MovieDto>(movie);
+            var response = new ApiResponse<Movie>(movie);
             return Ok(response);
         }
 
@@ -49,8 +49,8 @@ namespace MovieScore.Api.Controllers
             return Ok(response);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> PutMovie(int id, MovieDto movieDto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutMovie(int id, [FromBody] MovieDto movieDto)
         {
             var movie = _mapper.Map<Movie>(movieDto);
             movie.Id = id;

@@ -22,13 +22,28 @@ namespace MovieScore.Api
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
+
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options => {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
 
             services.AddDbContext<MovieScoreContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("MovieScore"))
@@ -54,7 +69,7 @@ namespace MovieScore.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
 
             app.UseRouting();
