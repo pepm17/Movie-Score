@@ -50,7 +50,7 @@ namespace MovieScore.Api.Controllers
             return Ok(response);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateActor(int id, ActorDto actorDto)
         {
             var actor = _mapper.Map<Actor>(actorDto);
