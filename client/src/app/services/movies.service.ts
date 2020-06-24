@@ -8,8 +8,6 @@ import { Observable } from 'rxjs';
 })
 export class MoviesService {
 
-  API_URI = 'https://localhost:44397/api'
-
   constructor(private http: HttpClient) { }
 
   getMovies(): Observable<any>{

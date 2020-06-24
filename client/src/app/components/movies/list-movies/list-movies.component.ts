@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../../../services/movies.service';
-declare var $: any;
 
 @Component({
   selector: 'app-list-movies',
