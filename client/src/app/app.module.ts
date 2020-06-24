@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms'
 import { MoviesService } from './services/movies.service';
 import { ListActorsComponent } from './components/actors/list-actors/list-actors.component';
 import { ListAllActorsComponent } from './components/actors/list-all-actors/list-all-actors.component';
+import { AddMovieModalComponent } from './components/header/add-movie-modal/add-movie-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ListAllActorsComponent } from './components/actors/list-all-actors/list
     FormScoreComponent,
     ListActorsComponent,
     ListAllActorsComponent,
+    AddMovieModalComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+.separar{
+    margin: 10px;
+    width: 300px;
+}
+.rightTitle{
+    margin-right: 50px;
+}
+.rightImage{
+    margin-right: 28px;
+}
+
+.modalColor{
+    background-color: rgb(36, 35, 35);;
+}
+
+.modalSize{
+    max-width: 500px;
+}
